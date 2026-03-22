@@ -25,12 +25,12 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-					<li class="current"><a href="index.html">Home</a></li>
+					<li><a href="../index.html">Home</a></li>
 					<li><a href="docs/index.html">Documentation</a></li>
 					<li><a href="https://github.com/dirkwhoffmann/DeepDrill">Code</a></li>
 					<li><a href="https://github.com/dirkwhoffmann/DeepDrill/issues">Issues</a></li>
 					<li><a href="https://github.com/dirkwhoffmann/DeepDrill/discussions">Discussions</a></li>
-					<li><a href="impressum.html">Impressum</a></li>
+					<li><a href="../impressum.html">Impressum</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -65,50 +65,7 @@
 								
 								<p>After delving deeper into the new algorithms, I came up with the idea of combining my new insights with my lecturing work. The result is DeepDrill. This much in advance: I do not want to compete with the established fractal generators in any way. The established generators are so far developed that I am neither able to compete in functionality nor computing speed. With DeepDrill, I try to provide a lean and easy-to-comprehend code base that allows students to learn modern Mandelbrot algorithms from a concrete implementation. It is meant to serve as a base application that can be expanded by various student projects in the areas of numerics, computer graphics, and runtime optimization. If my idea falls on fertile ground, the functionality will gradually expand.</p>
 
-								<p>DeepDrill is open source software and released under the GNU General Public License v3.</p>
-
-								<h2>News feed</h2>
-								<h3><em>24.8.2023 &nbsp;</em>DeepDrill 3.3 released</h3>
-								<p>DeepDrill 3.2 now supports the distance estimation technique, which is the preferred method to produce crisp black and white images of the Mandelbrot set.
-								<div>
-									<image width="560" height="315" src="images/distance.jpg" title="Distance estimator technique"></image>
-								</div>
-								<br>
-								<h3><em>8.7.2023 &nbsp;</em>DeepDrill 3.1 released</h3>
-								<p>DeepDrill 3.1 offers a revised graphics engine that is more flexible than its predecessor. For example, various parameters such as the zoom speed or the texture opacity can be varied throughout the video by assigning the parameter a spline curve instead of a fixed value. In addition, the zoom direction can be reversed now.</p>
-								<div>
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/nR-J2aWEFck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-								</div>
-								<br>
-								<h3><em>25.6.2023 &nbsp;</em>DeepDrill 3.0 released</h3>
-								<p>The new version offers improvements in three main areas. First, several speed improvements have been implemented. I.e., an area checker, a period checker, and an attractor checker have been added, which can classify certain pixels as belonging to the Mandelbrot set before the maximum iteration number is reached. Secondly, new graphic effects can be applied. With the new version, it is possible to overlay color values derived from the color palette with pixels from an overlay texture. The demo video below shows the effect in action. Third, the input and output formats have been revised. Location files, profiles and project files have been replaced by configuration files with the .ini extension.</p>
-								<div>
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/qtfRFt_CK9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-								</div>
-								<br>
-								<h3><em>14.6.2023 &nbsp;</em>DeepDrill 2.0 released</h3>
-								<p>DeepDrill 2.0 is a major update. The new version offers a reworked tool chain, improved GPU filters, and the capability of creating spatial images.</p>
-								<div>
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/dNWzz-BignM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-								</div>
-								<br>
-								<h3><em>27.5.2023 &nbsp;</em>DeepDrill 1.2 released</h3>
-								<p>DeepDrill 1.2 offers improved shader support. The new version achieves much smoother scrolling by utilizing tricubic texel interpolation.</p>
-								<div>
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/Y7q34KEK8h4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-								</div>
-								<br>								
-								<h3><em>2.5.2023 &nbsp;</em>DeepDrill 1.1 released</h3>
-								<p>DeepDrill 1.1 offers simplified palette management and a cleaned up code base.</p>
-								<div>
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/Az5tYFvBvNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-								</div>
-								<br>								
-								<h3><em>25.4.2023 &nbsp;</em>DeepDrill 1.0 released</h3>
-								<p>DeepDrill 1.0 supports both the creation of still images and zoom videos.</p>
-								<div>	
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/OcXcHgwJ33g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-								</div>								
+								<p>DeepDrill is open source software and released under the GNU General Public License v3.</p>						
 							</article>
 
 						</div>
@@ -118,31 +75,26 @@
 
 							<!-- Sidebar -->
 							<section>
-								<h2>Project activity</h2>
-								<p>
-									<img alt="GitHub watchers"
-									src="https://img.shields.io/github/watchers/dirkwhoffmann/DeepDrill?style=social">
-									<img alt="GitHub Repo stars"
-									src="https://img.shields.io/github/stars/dirkwhoffmann/DeepDrill?style=social">
-									<img alt="GitHub forks"
-									src="https://img.shields.io/github/forks/dirkwhoffmann/DeepDrill?style=social"><br><br>
-									<img alt="GitHub build status Linux"
-									src="https://github.com/dirkwhoffmann/DeepDrill/workflows/CMake-Ubuntu/badge.svg"><br>
-									<img alt="GitHub build status Mac"
-									src="https://github.com/dirkwhoffmann/DeepDrill/workflows/CMake-MacOS/badge.svg"><br>
-									<img alt="GitHub release (latest by date)"
-									src="https://img.shields.io/github/downloads/dirkwhoffmann/DeepDrill/latest/total">
-									<img alt="GitHub all releases"
-									src="https://img.shields.io/github/downloads/dirkwhoffmann/DeepDrill/total"><br>
-									<img alt="GitHub issues"
-									src="https://img.shields.io/github/issues/dirkwhoffmann/DeepDrill">
-									<img alt="GitHub closed issues"
-									src="https://img.shields.io/github/issues-closed/dirkwhoffmann/DeepDrill"><br>
-									<img alt="GitHub code size in bytes"
-									src="https://img.shields.io/github/languages/code-size/dirkwhoffmann/DeepDrill">
-									<img alt="GitHub repo size"
-									src="https://img.shields.io/github/repo-size/dirkwhoffmann/DeepDrill">
-								</p>
+								<h2>Showcases</h2>
+								<div>
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/nR-J2aWEFck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+								<div>
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/qtfRFt_CK9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+								<div>
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/dNWzz-BignM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+								<div>
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/Y7q34KEK8h4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+								<br>								
+								<div>
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/Az5tYFvBvNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+								<div>	
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/OcXcHgwJ33g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>							
 							</section>
 						</div>
 					</div>
