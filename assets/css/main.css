@@ -2097,6 +2097,19 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.right {
+			display: block;
+			float: right;
+			margin: 0 2em 2em 0;
+			position: relative;
+			top: 0.25em;
+		}
+
+			.image.right img {
+				display: block;
+				width: 100%;
+			}
+
 		.image.fit {
 			display: block;
 		}
@@ -2528,6 +2541,14 @@ input, select, textarea {
 		}
 
 			.box.post .inner > :last-child {
+				margin-bottom: 0;
+			}
+
+		.box.post .innerright {
+			margin-right: calc(30% + 2em);
+		}
+
+			.box.post .innerright > :last-child {
 				margin-bottom: 0;
 			}
 
