@@ -3374,6 +3374,13 @@ input, select, textarea {
     height: 0;
     overflow: hidden;
     width: 100%;
+
+    /* This adds 40px of space to the bottom of every video */
+    margin-bottom: 20px; 
+
+    /* Optional: add a border if you still want the visual frame */
+    border: 2px solid #333;
+    border-radius: 8px;
 }
 
 .video-container iframe {
