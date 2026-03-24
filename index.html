@@ -17,7 +17,8 @@
 			<nav id="nav">
 				<ul>
 					<li class="current"><a href="index.html">Home</a></li>
-					<li><a href="#">Applications</a>
+					<li><a href="news.html">News</a></li>
+					<li><a href="#">Products</a>
 						<ul>
 							<li><a href="vAmiga/index.html">vAmiga</a></li>
 							<li><a href="VirtualC64/index.html">VirtualC64</a></li>
@@ -30,222 +31,216 @@
 							<li><a href="https://vamigados.github.io/">vAmiga.dos</a></li>
 						</ul>	
 					</li>
-					<li><a href="https://github.com/dirkwhoffmann">GitHub</a></li>
 					<li><a href="impressum.html">Impressum</a></li>
 				</ul>
 			</nav>
 		</div>
 	</div>
 
-	<!-- Gigantic Heading -->
+<!-- Banner -->
+<section id="banner" style="--banner-img: url('../../images/banner.jpg');">
+	<header>
+		<h2><em>Welcome to my free software library</em></h2>
+	</header>
+</section>
 
-	<section class="wrapper style2">
-		<div class="container">
-			<header class="major">
-				<h2>Welcome</h2>
-				<p>to Dirk Hoffmann's free software library</p>
-			</header>
+<section class="wrapper style1">
+	<div class="container">
+		<div class="row gtr-200">
+
+			<div class="col-9 col-12-narrower">
+				<div id="content">
+
+					<section>
+						<h2>Overview</h2>
+						<p>This page provides an overview of my applications, most of which are related to retro computing. Each project has its own subpage with more detailed information.
+							Bug reports and feedback are always welcome; please feel free to open an issue in the corresponding project repository. All projects are released under open-source licenses.
+						</p>
+					</section>
+
+					<section class="col-8 col-12-narrower">
+
+						<div class="box post">
+							<a href="https://dirkwhoffmann.github.io/virtualc64" class="image left"><img src="images/ad-vc.png" alt="" /></a>
+							<div class="inner">
+								<h3>VirtualC64</h3>
+								<p>VirtualC64 is a Commodore 64 emulator written for macOS with a strong emphasis on timing accuracy and a intuitive UI.
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="col-8 col-12-narrower">
+
+						<div class="box post">
+							<a href="https://dirkwhoffmann.github.io/vAmiga" class="image right"><img src="images/ad-va.png" alt="" /></a>
+							<div class="innerright">
+								<h3>vAmiga</h3>
+								<p>vAmiga is a native macOS application, emulating the classic Amiga models A500, A1000, and A2000. Like VirtualC64, it focuses on timing-accuracy and user-experience.
+								</p>
+							</div>
+						</div>
+					</section>
+
+
+					<section class="col-8 col-12-narrower">
+						<div class="box post">
+							<a href="https://dirkwhoffmann.github.io/Moira" class="image left"><img src="images/ad-mo.png" alt="" /></a>
+							<div class="inner">
+								<h3>Moira</h3>
+								<p>Moira is a speed-optimized, cycle-accurate Motorola 68000 CPU core written in C++, powering the emulation behind vAmiga, It is maintained as a stand-alone project for easy integration into third-party apps.
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="col-8 col-12-narrower">
+						<div class="box post">
+							<a href="https://dirkwhoffmann.github.io/Peddle" class="image right"><img src="images/ad-pe.png" alt="" /></a>
+							<div class="innerright">
+								<h3>Peddle</h3>
+								<p>Peddle is a speed-optimized, cycle-accurate MOS 6502/6510 CPU core written on C++, powering the emulation behind VirtualC64. Like Moira, it is maintained as a stand-alone project for easy integration into third-party apps.
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="col-8 col-12-narrower">
+						<div class="box post">
+							<a href="https://dirkwhoffmann.github.io/RetroVisor" class="image left"><img src="images/ad-rv.png" alt="" /></a>
+							<div class="inner">
+								<h3>RetroVisor</h3>
+								<p>RetroVisor is a utility for macOS that applies a real-time CRT filter to any region of the desktop. Inspired by ShaderGlass, it creates a semi-transparent overlay that allows the user to view content through a customizable "retro lens," featuring scanlines, shadow masks, and phosphor glow.
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="col-8 col-12-narrower">
+						<div class="box post">
+							<a href="https://dirkwhoffmann.github.io/retrovault" class="image right"><img src="images/ad-vault.png" alt="" /></a>
+							<div class="innerright">
+								<h3>RetroVault</h3>
+								<p>RetroVault is a management tool for legacy disk images. It allows users to explore the file structures of classic media files for the Commodore 64 and Amiga. Via FUSE, disk images can be mounted directly in the host OS.
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="col-8 col-12-narrower">
+						<div class="box post">
+							<a href="https://dirkwhoffmann.github.io/DeepDrill" class="image left"><img src="images/ad-dd.png" alt="" /></a>
+							<div class="inner">
+								<h3>DeepDrill</h3>
+								<p>DeepDrill is a Mandelbrot set explorer based on perturbation and series approximation. These modern techniques bypass the precision limits of standard floating-point math, allowing users to zoom deeply into the fractal without the  performance penalty of traditional algorithms.
+								</p>
+							</div>
+						</div>
+					</section>
+					<section class="col-8 col-12-narrower">
+						<div class="box post">
+							<a href="https://dirkwhoffmann.github.io/vamiganet" class="image right"><img src="images/ad-va-net.png" alt="" /></a>
+							<div class="innerright">
+								<h3>vAmiga.net</h3>
+								<p>vAmiga.net is my personal web-port of vAmiga, built using WebAssembly (WASM) and SvelteKit. It delivers low-latency emulation and a responsive UI without requiring local installation.
+								</p>
+							</div>
+						</div>
+					</section>
+					<section class="col-8 col-12-narrower">
+						<div class="box post">
+							<a href="https://github.com/vAmigaDOS/vAmigaDOS" class="image left"><img src="images/ad-va-dos.png" alt="" /></a>
+							<div class="inner">
+								<h3>vAmiga.dos</h3>
+								<p>vAmiga.dos is a specialized web-based environment for manipulating Amiga disk files (ADF). It features a command-line interface that allows users to perform disk operations directly in the browser.
+								</p>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+
+			<div class="col-3 col-12-narrower">
+				<div id="sidebar">
+
+					<section>
+						<h2>Web Apps</h2>
+						<div class="box highlight">
+							<a href="https://vamiganet.github.io" class="image"><img src="images/web-va-net.png" alt="" width="70%"/></a>
+							<h3>vAmiga.net</h3>
+						</div>
+						<div class="box highlight">
+							<a href="https://vamigados.github.io" class="image"><img src="images/web-va-dos.png" alt="" width="70%"/></a>
+							<h3>vAmiga.net</h3>
+						</div>
+
+						<h2>Spin-Offs</h2>
+						<div class="box highlight">
+							<a href="https://vc64web.github.io" class="image"><img src="images/web-vc-web.png" alt="" width="70%"/></a>
+							<h3>vc64.web</h3>
+						</div>
+						<div class="box highlight">
+							<a href="https://vamigaweb.github.io" class="image"><img src="images/web-va-web.png" alt="" width="70%"/></a>
+							<h3>vAmiga.web</h3>
+						</div>
+						<div class="box highlight">
+							<a href="https://coppenheimer.heckmeck.de" class="image"><img src="images/web-coppenheimer.png" alt="" width="70%"/></a>
+							<h3>Coppenheimer</h3>
+						</div>
+						<div class="box highlight">
+							<a href="https://www.neoartcr.com/virtualc64/index.htm" class="image"><img src="images/web-neo-vc.png" alt="" width="70%"/></a>
+							<h3>Neoartcr</h3>
+						</div>
+						<div class="box highlight">
+							<a href="https://www.neoartcr.com/vamiga/index.htm" class="image"><img src="images/web-neo-va.png" alt="" width="70%"/></a>
+							<h3>Neoartcr</h3>
+						</div>
+					</section>
+				</div>
+			</div>
 		</div>
+
 	</section>
 
-	<section class="wrapper style1">
-		<div class="container">
-			<div class="row gtr-200">
+	<div id="footer">
 
-				<div class="col-9 col-12-narrower">
-					<div id="content">
+		<ul class="icons">
+			<li>
+				<a href="http://www.dirkwhoffmann.de" class="icon solid fa-graduation-cap"><span class="label">Homepage</span></a>
+			</li>
+			<li>
+				<a href="https://www.amazon.de/Dirk-W-Hoffmann/e/B004580IPU" class="icon brands fa-amazon"><span class="label">Amazon</span></a>
+			</li>
+			<li>
+				<a href="https://github.com/dirkwhoffmann" class="icon brands fa-github"><span class="label">GitHub</span></a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/channel/UCk9tUTMPMSQdxhKeeJRpNAA" class="icon brands fa-youtube"><span class="label">Youtube</span></a>
+			</li>	
+			<li>
+				<a href="https://de.wikipedia.org/wiki/Dirk_Hoffmann" class="icon brands fa-wikipedia-w"><span class="label">Wikipedia</span></a>
+			</li>
+		</ul>
 
-						<section>
-							<h2>Overview</h2>
-							<p>This page provides an overview of my applications, most of which are related to retro computing. Each project has its own subpage with more detailed information.
-								Bug reports and feedback are always welcome; please feel free to open an issue in the corresponding project repository. All projects are released under open-source licenses.
-							</p>
-						</section>
-
-						<section class="col-8 col-12-narrower">
-
-							<div class="box post">
-								<a href="https://dirkwhoffmann.github.io/virtualc64" class="image left"><img src="images/ad-vc.png" alt="" /></a>
-								<div class="inner">
-									<h3>VirtualC64</h3>
-									<p>VirtualC64 is a Commodore 64 emulator written for macOS with a strong emphasis on timing accuracy and a intuitive UI.
-									</p>
-								</div>
-							</div>
-						</section>
-
-						<section class="col-8 col-12-narrower">
-
-							<div class="box post">
-								<a href="https://dirkwhoffmann.github.io/vAmiga" class="image right"><img src="images/ad-va.png" alt="" /></a>
-								<div class="innerright">
-									<h3>vAmiga</h3>
-									<p>vAmiga is a native macOS application, emulating the classic Amiga models A500, A1000, and A2000. Like VirtualC64, it focuses on timing-accuracy and user-experience.
-									</p>
-								</div>
-							</div>
-						</section>
-
-
-						<section class="col-8 col-12-narrower">
-							<div class="box post">
-								<a href="https://dirkwhoffmann.github.io/Moira" class="image left"><img src="images/ad-mo.png" alt="" /></a>
-								<div class="inner">
-									<h3>Moira</h3>
-									<p>Moira is a speed-optimized, cycle-accurate Motorola 68000 CPU core written in C++, powering the emulation behind vAmiga, It is maintained as a stand-alone project for easy integration into third-party apps.
-									</p>
-								</div>
-							</div>
-						</section>
-
-						<section class="col-8 col-12-narrower">
-							<div class="box post">
-								<a href="https://dirkwhoffmann.github.io/Peddle" class="image right"><img src="images/ad-pe.png" alt="" /></a>
-								<div class="innerright">
-									<h3>Peddle</h3>
-									<p>Peddle is a speed-optimized, cycle-accurate MOS 6502/6510 CPU core written on C++, powering the emulation behind VirtualC64. Like Moira, it is maintained as a stand-alone project for easy integration into third-party apps.
-									</p>
-								</div>
-							</div>
-						</section>
-
-						<section class="col-8 col-12-narrower">
-							<div class="box post">
-								<a href="https://dirkwhoffmann.github.io/RetroVisor" class="image left"><img src="images/ad-rv.png" alt="" /></a>
-								<div class="inner">
-									<h3>RetroVisor</h3>
-									<p>RetroVisor is a utility for macOS that applies a real-time CRT filter to any region of the desktop. Inspired by ShaderGlass, it creates a semi-transparent overlay that allows the user to view content through a customizable "retro lens," featuring scanlines, shadow masks, and phosphor glow.
-									</p>
-								</div>
-							</div>
-						</section>
-
-						<section class="col-8 col-12-narrower">
-							<div class="box post">
-								<a href="https://dirkwhoffmann.github.io/retrovault" class="image right"><img src="images/ad-vault.png" alt="" /></a>
-								<div class="innerright">
-									<h3>RetroVault</h3>
-									<p>RetroVault is a management tool for legacy disk images. It allows users to explore the file structures of classic media files for the Commodore 64 and Amiga. Via FUSE, disk images can be mounted directly in the host OS.
-									</p>
-								</div>
-							</div>
-						</section>
-
-						<section class="col-8 col-12-narrower">
-							<div class="box post">
-								<a href="https://dirkwhoffmann.github.io/DeepDrill" class="image left"><img src="images/ad-dd.png" alt="" /></a>
-								<div class="inner">
-									<h3>DeepDrill</h3>
-									<p>DeepDrill is a Mandelbrot set explorer based on perturbation and series approximation. These modern techniques bypass the precision limits of standard floating-point math, allowing users to zoom deeply into the fractal without the  performance penalty of traditional algorithms.
-									</p>
-								</div>
-							</div>
-						</section>
-						<section class="col-8 col-12-narrower">
-							<div class="box post">
-								<a href="https://dirkwhoffmann.github.io/vamiganet" class="image right"><img src="images/ad-va-net.png" alt="" /></a>
-								<div class="innerright">
-									<h3>vAmiga.net</h3>
-									<p>vAmiga.net is my personal web-port of vAmiga, built using WebAssembly (WASM) and SvelteKit. It delivers low-latency emulation and a responsive UI without requiring local installation.
-									</p>
-								</div>
-							</div>
-						</section>
-						<section class="col-8 col-12-narrower">
-							<div class="box post">
-								<a href="https://github.com/vAmigaDOS/vAmigaDOS" class="image left"><img src="images/ad-va-dos.png" alt="" /></a>
-								<div class="inner">
-									<h3>vAmiga.dos</h3>
-									<p>vAmiga.dos is a specialized web-based environment for manipulating Amiga disk files (ADF). It features a command-line interface that allows users to perform disk operations directly in the browser.
-									</p>
-								</div>
-							</div>
-						</section>
-					</div>
-				</div>
-
-				<div class="col-3 col-12-narrower">
-					<div id="sidebar">
-
-						<section>
-							<h2>Web Apps</h2>
-							<div class="box highlight">
-								<a href="https://vamiganet.github.io" class="image"><img src="images/web-va-net.png" alt="" width="70%"/></a>
-								<h3>vAmiga.net</h3>
-							</div>
-							<div class="box highlight">
-								<a href="https://vamigados.github.io" class="image"><img src="images/web-va-dos.png" alt="" width="70%"/></a>
-								<h3>vAmiga.net</h3>
-							</div>
-
-							<h2>Spin-Offs</h2>
-							<div class="box highlight">
-								<a href="https://vc64web.github.io" class="image"><img src="images/web-vc-web.png" alt="" width="70%"/></a>
-								<h3>vc64.web</h3>
-							</div>
-							<div class="box highlight">
-								<a href="https://vamigaweb.github.io" class="image"><img src="images/web-va-web.png" alt="" width="70%"/></a>
-								<h3>vAmiga.web</h3>
-							</div>
-							<div class="box highlight">
-								<a href="https://coppenheimer.heckmeck.de" class="image"><img src="images/web-coppenheimer.png" alt="" width="70%"/></a>
-								<h3>Coppenheimer</h3>
-							</div>
-							<div class="box highlight">
-								<a href="https://www.neoartcr.com/virtualc64/index.htm" class="image"><img src="images/web-neo-vc.png" alt="" width="70%"/></a>
-								<h3>Neoartcr</h3>
-							</div>
-							<div class="box highlight">
-								<a href="https://www.neoartcr.com/vamiga/index.htm" class="image"><img src="images/web-neo-va.png" alt="" width="70%"/></a>
-								<h3>Neoartcr</h3>
-							</div>
-						</section>
-					</div>
-				</div>
-			</div>
-
-		</section>
-
-		<div id="footer">
-
-			<ul class="icons">
-				<li>
-					<a href="http://www.dirkwhoffmann.de" class="icon solid fa-graduation-cap"><span class="label">Homepage</span></a>
-				</li>
-				<li>
-					<a href="https://www.amazon.de/Dirk-W-Hoffmann/e/B004580IPU" class="icon brands fa-amazon"><span class="label">Amazon</span></a>
-				</li>
-				<li>
-					<a href="https://github.com/dirkwhoffmann" class="icon brands fa-github"><span class="label">GitHub</span></a>
-				</li>
-				<li>
-					<a href="https://www.youtube.com/channel/UCk9tUTMPMSQdxhKeeJRpNAA" class="icon brands fa-youtube"><span class="label">Youtube</span></a>
-				</li>	
-				<li>
-					<a href="https://de.wikipedia.org/wiki/Dirk_Hoffmann" class="icon brands fa-wikipedia-w"><span class="label">Wikipedia</span></a>
-				</li>
-
+		<div class="copyright">
+			<ul class="menu">
+				<li>&copy; <a href="http://www.dirkwhoffmann.de">Dirk W. Hoffmann</a></li>
+				<li><a href="impressum.html">Impressum</a></li>
+				<li><a href="impressum.html">Datenschutz</a></li>
+				<li><a href="http://html5up.net">HTML5 UP</a></li>
 			</ul>
-
-			<div class="copyright">
-				<ul class="menu">
-					<li>&copy; <a href="http://www.dirkwhoffmann.de">Dirk W. Hoffmann</a></li>
-					<li><a href="impressum.html">Impressum</a></li>
-					<li><a href="impressum.html">Datenschutz</a></li>
-					<li><a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-
 		</div>
 
 	</div>
 
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
