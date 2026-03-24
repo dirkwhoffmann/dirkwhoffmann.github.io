@@ -33,7 +33,7 @@
 	<meta name="twitter:image" content="https://dirkwhoffmann.github.io/virtualc64/images/preview.jpg" />
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
 
 	<!-- web emulator view stuff start-->
 	<style>
@@ -155,30 +155,36 @@
 		<div id="header">
 
 			<!-- Logo -->
-			<h1><a href="index.html" id="logo">VirtualC64<em> for macOS</em></a></h1>
+			<h1><a href="index.html" id="logo">Dirk W. Hoffmann<em> { VirtualC64 }</em></a></h1>
 
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-					<li class="current"><a href="index.html">About</a></li>
-					<li><a href="news.html">News</a></li>
-					<li><a href="docs/index.html">Documentation</a></li>
-					<li><a href="https://github.com/dirkwhoffmann/virtualc64">Code</a></li>
-					<li><a href="https://github.com/dirkwhoffmann/virtualc64/issues">Issues</a></li>
-					<li><a href="https://github.com/dirkwhoffmann/virtualc64/discussions">Discussions</a></li>
-					<li><a href="impressum.html">Impressum</a></li>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../news.html">News</a></li>
+					<li class="current"><a href="#">Products</a>
+						<ul>
+							<li><a href="../vAmiga/index.html">vAmiga</a></li>
+							<li><a href="../VirtualC64/index.html">VirtualC64</a></li>
+							<li class="current"><a href="../Moira/index.html">Moira</a></li>
+							<li><a href="../Peddle/index.html">Peddle</a></li>
+							<li><a href="../RetroVisor/index.html">RetroVisor</a></li>
+							<li><a href="../RetroVault/index.html">RetroVault</a></li>
+							<li><a href="../DeepDrill/index.html">DeepDrill</a></li>
+							<li><a href="../https://vamiganet.github.io/">vAmiga.net</a></li>
+							<li><a href="../https://vamigados.github.io/">vAmiga.dos</a></li>
+						</ul>	
+					</li>
+					<li><a href="../impressum.html">Impressum</a></li>
 				</ul>
 			</nav>
 		</div>
 
 		<!-- Banner -->
-		<section id="banner">
+		<section id="banner" style="--banner-img: url('../../VirtualC64/images/banner.jpg');">
 			<header>
-				<h2><em>Download the latest version</em></h2>
-				<a href="https://github.com/dirkwhoffmann/virtualc64/releases/download/v5.3.1/VirtualC64.app.zip"
-				class="button">VirtualC64 5.3.1</a>
-				<a href="https://github.com/dirkwhoffmann/virtualc64/releases/download/v6.0b1/VirtualC64.app.zip"
-				class="button">6.0 Beta 1</a>
+				<h2><em>VirtualC64 is distributed via the releases page on</em></h2>
+				<a href="https://github.com/dirkwhoffmann/VirtualC64/releases" class="button">GitHub</a>
 			</header>
 		</section>
 
@@ -186,18 +192,18 @@
 		<section class="wrapper style2">
 			<div class="container">
 				<header class="major">
-					<h2>Welcome to the world of friendly emulation</h2>
+					<h2>Welcome to the world of friendly emulation!</h2>
 					<p>Say Hello to VirtualC64</p>
 				</header>
 			</div>
 		</section>
 
-		<!-- Grid -->
+		<!-- Main -->
 		<section class="wrapper style1">
 			<div class="container">
 				<div class="row">
 					<section class="col-6 col-12-narrower">
-						<div class="box post">
+						<div class="box post small">
 							<a href="#" class="image left"><img src="images/icon-vc.jpg" alt="" /></a>
 							<div class="inner">
 								<h3>About</h3>
@@ -210,16 +216,35 @@
 					</section>
 					<section class="col-6 col-12-narrower">
 						<div class="box post">
+							<a href="#" class="image left"></a>
+							<div class="inner">
+								<h3>Resources &nbsp;</h3>
+								<a href="https://github.com/dirkwhoffmann/virtualC64"
+								class="button" style="display: inline-block; width: 100%; text-align: left; margin-bottom: 0.75em;"><i class="icon brands fa-github" style="margin-right: 0.25em;"></i> Code</a>
+								<a href="https://github.com/dirkwhoffmann/virtualC64/issues"
+								class="button" style="display: inline-block; width: 100%; text-align: left; margin-bottom: 0.75em;"><i class="icon brands fa-github" style="margin-right: 0.25em;"></i> Issues</a>
+								<a href="https://github.com/dirkwhoffmann/virtualC64/discussions"
+								class="button" style="display: inline-block; width: 100%; text-align: left; margin-bottom: 0.75em;"><i class="icon brands fa-github" style="margin-right: 0.25em;"></i> Discussions</a>
+								<a href="docs/index.html"
+								class="button" style="display: inline-block; width: 100%; text-align: left; margin-bottom: 0.75em;"><i class="icon brands fa-github" style="margin-right: 0.25em;"></i> Documentation</a>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="row">
+					<div class="col-6 col-12-narrower">
+						<div class="box post">
 							<a href="#" class="image left"><img src="images/icon-wa.jpg" alt="" /></a>
 							<div class="inner">
 								<h3>Web Assembly</h3>
 								<p>The core emulator is designed to be compatible with WebAssembly and can 
 									run in your browser. With the new web version, viewing demos or playing games
-								is just a few mouse clicks away.</p>
+								is just a few mouse clicks away.
+								</p>
 							</div>
 						</div>
-					</section>
-					<section class="col-6 col-12-narrower">
+					</div>
+					<div class="col-6 col-12-narrower">
 						<div class="box post">
 							<a href="#" class="image left"><img src="images/hist.jpg" alt="" /></a>
 							<div class="inner">
@@ -228,11 +253,12 @@
 									the emulator was intended as a virtual CPU environment for being 
 									used in a one-year or two-year course on computer engineering.
 									Over the years, VirtualC64 has become more and more accurate and
-								evolved into a full-blown emulator.</p>
+								evolved into a full-blown emulator.
+								</p>
 							</div>
 						</div>
-					</section>
-					<section class="col-6 col-12-narrower">
+					</div>
+					<div class="col-6 col-12-narrower">	
 						<div class="box post">
 							<a href="#" class="image left"><img src="images/dao.png" alt="" /></a>
 							<div class="inner">
@@ -241,12 +267,12 @@
 									Easy: VirtualC64 aims for bridging the gap between the emulated and the
 									real machine with an easy-to-use interface. Clean: It is my
 									deep conviction that the code quality is as important as
-								system-level functionality. Free: VirtualC64 is open-source software.</p>
+								system-level functionality. Free: VirtualC64 is open-source software.
+								</p>
 							</div>
 						</div>
-					</section>
-
-					<section class="col-6 col-12-narrower">
+					</div>
+					<div class="col-6 col-12-narrower">
 						<div class="box post">
 							<a href="#" class="image left"><img src="images/roms-vc.jpg" alt="" /></a>
 							<div class="inner">
@@ -259,12 +285,12 @@
 								</p>
 							</div>
 						</div>
-					</section>
-					<section class="col-6 col-12-narrower">
+					</div>
+					<div class="col-6 col-12-narrower">
 						<div class="box post">
 							<a href="#" class="image left"><img src="images/roms-mega.jpg" alt="" /></a>
 							<div class="inner">
-								<h3>Free Rom replacements</h3>
+								<h3>Rom Replacements</h3>
 								<p>If you do not have legal access to the original Commodore Roms,
 									you can run the emulator with the free Rom replacements that have
 									been developed as part of the Mega65 project. Recent versions of
@@ -273,35 +299,35 @@
 								</p>
 							</div>
 						</div>
-					</section>
-				</div>
-				<div class="row">
-					<section class="col-6 col-12-narrower">
+					</div>
+					<div class="col-6 col-12-narrower">
 						<div class="box post">
 							<a href="#" class="image left"><img src="images/joy.jpg" alt="" /></a>
 							<div class="inner">
-								<h3>Input devices</h3>
+								<h3>Input Devices</h3>
 								<p>To use a joystick within the emulator, either enable keyboard emulation or connect an
 									external USB joystick. It is recommended to use the emulator with the Speedlink
 									Competition Pro (USB), but other controllers such as the Sony Dualshock 4 are
 									supported, too. VirtualC64 also supports the RetroFun! USB adapter which allows the
-								connection of original Commodore joysticks.</p>
+								connection of original Commodore joysticks.
+								</p>
 							</div>
 						</div>
-					</section>
-					<section class="col-6 col-12-narrower">
+					</div>
+					<div class="col-6 col-12-narrower">
 						<div class="box post">
 							<a href="#" class="image left"><img src="images/vc-disk.jpg" alt="" /></a>
 							<div class="inner">
-								<h3>Media formats</h3>
+								<h3>Media Formats</h3>
 								<p>VirtualC64 supports all common C64 media formats. Disks can be imported
 									in form of D64, T64, PRG, P00, or G64 files. The emulator also supports
 									the TAP format for datasette tapes and the CRT format for cartridges
-								that can be plugged into the expansion port of the C64.</p>
+								that can be plugged into the expansion port of the C64.
+								</p>
 							</div>
 						</div>
-					</section>
-					<section class="col-6 col-12-narrower">
+					</div>
+					<div class="col-6 col-12-narrower">
 						<div class="box post">
 							<a href="#" class="image left"><img src="images/gnu.jpg" alt="" /></a>
 							<div class="inner">
@@ -309,83 +335,11 @@
 								<p>VirtualC64 is open-source and published under the terms of the GNU General Public
 									License. The CPU core has been re-licensed recently. It is published under 
 									the terms of the MIT license now, allowing much broader use. 
-								Please refer to the Peddle project for more details about this topic.</p>
+								Please refer to the Peddle project for more details about this topic.
+								</p>
 							</div>
 						</div>
-					</section>
-				</div>
-			</div>
-		</section>
-
-		<!-- Gigantic Heading -->
-		<section class="wrapper style2">
-			<div class="container">
-				<header class="major">
-					<h2>Related projects</h2>
-					<p>by the same author</p>
-				</header>
-			</div>
-		</section>
-
-		<!-- Highlights -->
-		<section class="wrapper style1">
-			<div class="container">
-				<div class="row gtr-200">
-					<section class="col-3 col-12-narrower">
-						<div class="box highlight">
-							<span class="image featured"><img src="images/ad-va.png" alt="vAmiga" /></span>
-							<footer><a href="https://dirkwhoffmann.github.io/vAmiga" class="button">vAmiga</a>
-							</footer>
-							<p>vAmiga is a Commodore Amiga emulator which is as user-friendly as VirtualC64. Check it
-								out
-							today.</p>
-						</div>
-					</section>
-					<section class="col-3 col-12-narrower">
-						<div class="box highlight">
-							<span class="image featured"><img src="images/ad-pe.png" alt="Peddle" /></span>
-							<footer><a href="https://dirkwhoffmann.github.io/Peddle" class="button">Peddle</a></footer>
-							<p>Peddle is the virtual MOS 6510 CPU driving VirtualC64. The CPU core is maintained in a
-							seperate repository and is easily integratable into your own application.</p>
-						</div>
-					</section>
-					<section class="col-3 col-12-narrower">
-						<div class="box highlight">
-							<span class="image featured"><img src="images/ad-mo.png" alt="Moira" /></span>
-							<footer><a href="https://dirkwhoffmann.github.io/Moira" class="button">Moira</a></footer>
-							<p>Moira is the virtual Motorola 68k CPU driving vAmiga. The CPU core is maintained in a
-								seperate repository and is as easy to integrate into your own application as Peddle.
-							</p>
-						</div>
-					</section>
-					<section class="col-3 col-12-narrower">
-						<div class="box highlight">
-							<span class="image featured"><img src="images/ad-rv.png" alt="vAmiga.dos" /></span>
-							<footer><a href="https://dirkwhoffmann.github.io/RetroVisor" class="button">RetroVisor</a>
-							</footer>
-							<p>RetroVisor allows the user to overlay any running macOS applications with a semi-transparent CRT shader window.</p>
-						</div>
-					</section>
-				</div>
-				<div class="row gtr-400">
-					<section class="col-3 col-12-narrower">
-					</section>
-					<section class="col-3 col-12-narrower">
-						<div class="box highlight">
-							<span class="image featured"><img src="images/ad-va-net.png" alt="vAmiga.net" /></span>
-							<footer><a href="https://vamiganet.github.io" class="button">vAmiga.net</a>
-							</footer>
-							<p>vAmiga.net is my personal web port of vAmiga, based on WASM, Svelte-Kit, Typescript and Tailwind. Start it in your browser with a single click.</p>
-						</div>
-					</section>
-					<section class="col-3 col-12-narrower">
-						<div class="box highlight">
-							<span class="image featured"><img src="images/ad-va-dos.png" alt="vAmiga.dos" /></span>
-							<footer><a href="https://vamigados.github.io" class="button">vAmiga.dos</a>
-							</footer>
-							<p>vAmiga.dos is an online tool for importing, analyzing,  modifying, and exporting ADF and HDF files in a shell-like environment.</p>
-						</div>
-					</section>
+					</div>
 				</div>
 			</div>
 		</section>
