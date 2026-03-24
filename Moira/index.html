@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <!--
-	Arcana by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Arcana by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 
@@ -15,79 +15,79 @@
 
 <body class="is-preload">
 	<div id="page-wrapper">
-
+		
 		<!-- Header -->
 		<div id="header">
-
+			
 			<!-- Logo -->
-			<h1><a href="index.html" id="logo">Moira<em> 68k Emulator</em></a></h1>
-
+			<h1><a href="index.html" id="logo">Dirk W. Hoffmann<em> { Moira }</em></a></h1>
+			
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
 					<li><a href="../index.html">Home</a></li>
-					<li><a href="docs/index.html">Documentation</a></li>
-					<li><a href="https://github.com/dirkwhoffmann/moira">Code</a></li>
-					<li><a href="https://github.com/dirkwhoffmann/moira/issues">Issues</a></li>
-					<li><a href="https://github.com/dirkwhoffmann/moira/discussions">Discussions</a></li>
+					<li><a href="../news.html">News</a></li>
+					<li class="current"><a href="#">Products</a>
+						<ul>
+							<li><a href="../vAmiga/index.html">vAmiga</a></li>
+							<li><a href="../VirtualC64/index.html">VirtualC64</a></li>
+							<li class="current"><a href="../Moira/index.html">Moira</a></li>
+							<li><a href="../Peddle/index.html">Peddle</a></li>
+							<li><a href="../RetroVisor/index.html">RetroVisor</a></li>
+							<li><a href="../RetroVault/index.html">RetroVault</a></li>
+							<li><a href="../DeepDrill/index.html">DeepDrill</a></li>
+							<li><a href="../https://vamiganet.github.io/">vAmiga.net</a></li>
+							<li><a href="../https://vamigados.github.io/">vAmiga.dos</a></li>
+						</ul>	
+					</li>
 					<li><a href="../impressum.html">Impressum</a></li>
 				</ul>
 			</nav>
 		</div>
-
+		
 		<!-- Banner -->
-		<section id="banner">
+		<section id="banner" style="--banner-img: url('../../images/banner.jpg');">
 			<header>
-				<h2><em>Moira is distributed via the GitHub releases page</em></h2>
-				<a href="https://github.com/dirkwhoffmann/Moira/releases/tag/v2.4" class="button">Download v2.4</a>
+				<header>
+					<h2><em>Moira is distributed via the releases page on</em></h2>
+					<a href="https://github.com/dirkwhoffmann/Moira/releases" class="button">GitHub</a>
+				</header>
 			</header>
 		</section>
-
-		<!-- Gigantic Heading -->
-		<section class="wrapper style2">
-			<div class="container">
-				<header class="major">
-					<h2>Welcome to the world of virtual silicon</h2>
-					<p>Say Hello to Moira</p>
-				</header>
-			</div>
-		</section>
-
-		<!-- Grid -->
+		
+		<!-- Main -->
 		<section class="wrapper style1">
 			<div class="container">
 				<div class="row">
-					<section class="col-6 col-12-narrower">
-						<div class="box post">
+					<div class="col-9 col-12-narrower">
+						<div class="box post small">
 							<a href="#" class="image left"><img src="images/icon-mo.png" alt="" /></a>
 							<div class="inner">
-								<h3>About</h3>
+								<h2>About</h2>
 								<p>Moira is a Motorola 68000, 68010, 680EC20, and 68020 emulator with
 									high emulation accuracy, both functionally and temporally. It was designed
 									for Amiga emulation which does not only require exact cycle counts, but
-								memory accesses being performed at the proper DMA cycles.</p>
+									memory accesses being performed at the proper DMA cycles.
+								</p>
 							</div>
 						</div>
-					</section>
-					<section class="col-6 col-12-narrower">
-						<div class="box post">
+						
+						<div class="box post small">
 							<a href="#" class="image left"><img src="images/cpp.png" alt="" /></a>
 							<div class="inner">
-								<h3>Portability</h3>
+								<h2>Portability</h2>
 								<p>Moira can be compiled on all major platforms (Linux, macOS, Windows) with
 									a standard C++20 complient compiler such as GCC, Clang, or MSVC. The
 									source code is compatible with WebAssembly, too, which makes Moira a
-								first-class candidate for being used in web-based applications.</p>
+									first-class candidate for being used in web-based applications.
+								</p>
 							</div>
 						</div>
-					</section>
-				</div>
-				<div class="row">
-					<section class="col-6 col-12-narrower">
-						<div class="box post">
+						
+						<div class="box post small">
 							<a href="#" class="image left"><img src="images/speed.png" alt="" /></a>
 							<div class="inner">
-								<h3>Speed</h3>
+								<h2>Speed</h2>
 								<p>The architecture of Moira is geared towards high emulation speed. To achieve
 									this goal, the emulator makes extensive use of templates. Moira even surpasses
 									the emulation speed of Musashi, which belongs to the fastest M68k emulators ever
@@ -95,54 +95,58 @@
 								</p>
 							</div>
 						</div>
-					</section>
-					<section class="col-6 col-12-narrower">
-						<div class="box post">
+						
+						<div class="box post small">
 							<a href="#" class="image left"><img src="images/mit.png" alt="" /></a>
 							<div class="inner">
-								<h3>License</h3>
+								<h2>License</h2>
 								<p>The source code of the core emulator is open-source and published under the
-								terms of the MIT License.</p>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-			<!-- </section> -->
-
-			<!-- One column -->
-			<div class="container">
-				<article>
-					<div id="content">
-
-						<!-- Content -->
-
-						<div class="container">
-							<div id="content">
-								<article>
-									<span class="image featured"><img src="images/cpuPanel.jpg" alt="" /></span>
-								</article>
+									terms of the MIT License.
+								</p>
 							</div>
 						</div>
 					</div>
-				</article>
+					
+					<div class="col-3 col-12-narrower">
+						<div id="sidebar">
+							<section>
+								<h2>Resources</h2>
+								<ul class="links">
+									<li><i class="icon brands fa-github" style="margin-right: 0.25em;"></i>
+										<a href="https://github.com/dirkwhoffmann/vAmiga">Code</a>
+									</li>
+									<li><i class="icon brands fa-github" style="margin-right: 0.25em;"></i>
+										<a href="https://github.com/dirkwhoffmann/vAmiga/issues">Issues</a>
+									</li>
+									<li><i class="icon brands fa-github" style="margin-right: 0.25em;"></i>
+										<a href="https://github.com/dirkwhoffmann/vAmiga/discussions">Discussions</a>
+									</li>
+									<li><i class="icon brands fa-github" style="margin-right: 0.25em;"></i>
+										<a href="docs/index.html">Documentation</a>
+									</li>
+								</ul>								
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Screenshot -->
+		<section class="wrapper style1">
+			<div class="container">
+				<div class="row">
+					<center>
+						<img src="images/cpuPanel.jpg" alt="Screenshot" width="100%"/>
+					</center>
+				</div>
 			</div>
 		</section>
 	</div>
-
-	<!-- Gigantic Heading -->
-	<section class="wrapper style2">
-		<div class="container">
-			<header class="major">
-				<h2>Related projects</h2>
-				<p>by the same author</p>
-			</header>
-		</div>
-	</section>
-
+	
 	<!-- Footer -->
 	<div id="footer">
-
+		
 		<!-- Icons -->
 		<ul class="icons">
 			<li>
@@ -161,7 +165,7 @@
 				<a href="https://de.wikipedia.org/wiki/Dirk_Hoffmann" class="icon brands fa-wikipedia-w"><span class="label">Wikipedia</span></a>
 			</li>
 		</ul>
-
+		
 		<!-- Copyright -->
 		<div class="copyright">
 			<ul class="menu">
@@ -172,7 +176,7 @@
 			</ul>
 		</div>
 	</div>
-
+	
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
@@ -180,7 +184,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
+	
 </body>
 
 </html>
