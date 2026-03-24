@@ -1,6 +1,45 @@
 @import url("fontawesome-all.min.css");
+/*
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+*/
 
+/* source-sans-pro-300 - latin */
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 300;
+	src: local(''),
+		 url('../webfonts/source-sans-pro-v21-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../webfonts/source-sans-pro-v21-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* source-sans-pro-300italic - latin */
+  @font-face {
+	font-family: 'Source Sans Pro';
+	font-style: italic;
+	font-weight: 300;
+	src: local(''),
+		 url('../webfonts/source-sans-pro-v21-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../webfonts/source-sans-pro-v21-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* source-sans-pro-600 - latin */
+  @font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 600;
+	src: local(''),
+		 url('../webfonts/source-sans-pro-v21-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../webfonts/source-sans-pro-v21-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* source-sans-pro-600italic - latin */
+  @font-face {
+	font-family: 'Source Sans Pro';
+	font-style: italic;
+	font-weight: 600;
+	src: local(''),
+		 url('../webfonts/source-sans-pro-v21-latin-600italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('../webfonts/source-sans-pro-v21-latin-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
 /*
 	Arcana by HTML5 UP
 	html5up.net | @ajlkn
@@ -9,8 +48,8 @@
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-code pre, a, abbr, acronym, address, big, cite,
-del, dfn, em, img, ins, kbd, q, s, samp,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
@@ -24,15 +63,6 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
-
-p {
-	text-align: justify;
-}
-
-pre { 
-	padding: 8pt;
-	background-color: #EEEEEE;
-}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -119,13 +149,13 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-		color: #b548b0;
+		color: #6e97dc;
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
 
 		a:hover {
-			color: #b548b0;
+			color: #6e97dc;
 			border-bottom-color: transparent;
 		}
 
@@ -2035,7 +2065,7 @@ input, select, textarea {
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		textarea:focus {
-			border-color: #b548b0;
+			border-color: #6e97dc;
 		}
 
 	input[type="text"],
@@ -2169,7 +2199,7 @@ input, select, textarea {
 		.icon.major {
 			text-align: center;
 			cursor: default;
-			background-color: #b548b0;
+			background-color: #6e97dc;
 			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
@@ -2200,7 +2230,7 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: none;
+		list-style: disc;
 		padding-left: 1em;
 	}
 
@@ -2437,7 +2467,7 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-		background-color: #b548b0;
+		background-color: #6e97dc;
 		border-radius: 5px;
 		border: 0;
 		color: #fff;
@@ -2457,7 +2487,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #672964; 
+			background-color: #50c8fc;
 			color: #fff !important;
 		}
 
@@ -2526,36 +2556,50 @@ input, select, textarea {
 	}
 
 	.box.post {
-		position: relative;
-		margin: 0 0 2em 0;
+    	--thumb-width: 30%; 
+	    position: relative;
+	    margin: 0 0 2em 0;
 	}
 
-		.box.post:after {
-			content: '';
-			display: block;
-			clear: both;
+		.box.post.small {
+		    --thumb-width: 20%;
 		}
 
-		.box.post .inner {
-			margin-left: calc(30% + 2em);
+		.box.post.large {
+		    --thumb-width: 45%;
 		}
 
-			.box.post .inner > :last-child {
-				margin-bottom: 0;
-			}
+		.box.post.xlarge {
+		    --thumb-width: 60%;
+		}
 
-		.box.post .innerright {
-			margin-right: calc(30% + 2em);
+
+	.box.post:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.box.post .inner {
+	    margin-left: calc(var(--thumb-width) + 2em);
+
+	    .box.post .inner > :last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.box.post .innerright {
+			margin-right: calc(var(--thumb-width) + 2em);
 		}
 
 			.box.post .innerright > :last-child {
 				margin-bottom: 0;
 			}
 
-		.box.post .image {
-			width: 30%;
-			margin: 0;
-		}
+	.box.post .image {
+	    width: var(--thumb-width);
+	    margin: 0;
+	}
 
 /* Header */
 
@@ -2582,7 +2626,7 @@ input, select, textarea {
 
 	#nav {
 		cursor: default;
-		background-color: #672964;
+		background-color: #2253a7;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
@@ -2595,7 +2639,7 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 			height: 0.75em;
-			background-color: #b548b0;
+			background-color: #6e97dc;
 			background-image: url("images/bg01.png");
 		}
 
@@ -2642,7 +2686,7 @@ input, select, textarea {
 						bottom: -0.5em;
 						left: 50%;
 						margin-left: -0.375em;
-						background-color: #b548b0;
+						background-color: #6e97dc;
 						background-image: url("images/bg01.png");
 					}
 
@@ -2766,7 +2810,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b548b0;
+			background-color: #6e97dc;
 			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
@@ -2776,12 +2820,17 @@ input, select, textarea {
 
 			.wrapper.style3 .button {
 				background: #fff;
-				color: #672964;
+				color: #474747;
 			}
 
 				.wrapper.style3 .button:hover {
-					color: #b548b0 !important;
+					color: #6e97dc !important;
 				}
+		
+		.wrapper.with-margin {
+    		padding-left: 10%;
+		    padding-right: 10%;
+		}
 
 /* CTA */
 
@@ -2813,7 +2862,7 @@ input, select, textarea {
 		}
 
 			#footer a:hover {
-				color: #b548b0;
+				color: #6e97dc;
 				border-bottom-color: transparent;
 			}
 
@@ -3098,7 +3147,7 @@ input, select, textarea {
 				background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 				height: 44px;
 				line-height: 44px;
-				box-shadow: 0 4px 0 0 #b548b0;
+				box-shadow: 0 4px 0 0 #6e97dc;
 			}
 
 				#titleBar .title {
