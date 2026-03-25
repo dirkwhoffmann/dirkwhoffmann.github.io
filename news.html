@@ -5,15 +5,15 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-
+	
 	<body class="is-preload">
 		<div id="page-wrapper">
-
+			
 			<!-- Header -->
 			<div id="header">
-
+				
 				<h1><a href="index.html" id="logo">Dirk W. Hoffmann<em> { News }</em></a></h1>
-
+				
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -35,102 +35,257 @@
 					</ul>
 				</nav>
 			</div>
-
+			
 			<!-- Banner -->
 			<section id="banner" style="--banner-img: url('../../images/banner-news.jpg');">
 				<header>
-					<h2><em>Read about the latest project activities</em></h2>
+					<h2><em>Explore what I’ve been working on lately</em></h2>
 				</header>
 			</section>
-
+			
 			<!-- Main -->
 			<section class="wrapper style1">
 				<div class="container">
 					<div class="row gtr-200">
-						<div class="col-8 col-12-narrower imp-narrower">
+						<div class="col-8 col-12-narrower">
 							<div id="content">
-
+								
 								<!-- Content -->
-
+								
 								<article>
 									<header>
 										<h2>News</h2>
 									</header>
-
+									
+									<h3><em>25.10.2025 &nbsp;</em>VirtualC64 6.0 Beta 1 released</h3>
+									<p>Originally, I had planned to release VirtualC64 versions 5.4, 5.5, and so on, gradually migrating the latest code changes from vAmiga step by step. However, I’ve changed plans and recently ported nearly all of vAmiga’s new features at once. Given the scale of these changes, I decided to bump the version number to 6.0, especially because this release introduces workspaces as the new document format for the emulator. Main Changes:</p> 
+									<ul>
+										<li>
+											<strong>Workspaces</strong><br>
+											A workspace is a bundle containing ROMs, media files, and configuration scripts. When a workspace is loaded, the ROMs are automatically installed, disks and cartridges are mounted, and the configuration script is executed before the emulator reboots. Essentially, it represents a complete working environment that restores itself automatically.<br>
+											Since the configuration script syntax is relatively stable, workspaces avoid the compatibility issues of snapshots, whose format often changes between releases, making older snapshots unusable after updates. Snapshots remain available, though, and can still be saved and loaded from the File menu.
+										</li>
+										<li>
+											<strong>Unified Settings</strong><br>
+											Until now, settings were split into Preferences (shared among emulator instances) and Virtual Machine Configurations (unique to each instance). In version 6.0, all settings are unified into a single settings dialog, simplifying configuration management.
+										</li>
+										<li>
+											<strong>Enhanced RetroShell</strong><br>
+											The RetroShell parser has been replaced by vAmiga’s latest version, offering more flexible command parsing and support for more complex syntax variants. Note that some command syntaxes have changed, so older configuration scripts may no longer be fully compatible.
+										</li>
+										<li>
+											<strong>Adaptive Sample Rate (ASR)</strong><br>
+											VirtualC64 6.0 features improved sample rate adjustment, significantly reducing buffer underflows and overflows. This allowed for a smaller audio buffer, which in turn decreases the delay between video and audio output.
+										</li>
+										<li>
+											<strong>GamePad Database</strong><br>
+											Version 6.0 now uses the SDL GamePad database to recognize connected controllers. This feature, borrowed from vAmiga, improves overall gamepad compatibility and support.
+										</li>
+										<li>
+											<strong>Redesigned Toolbars</strong><br>
+											All window toolbars are now created manually to improve compatibility with macOS Tahoe. However, Tahoe is still not officially supported, as I prefer not to invest time fixing issues on what I still consider one of Apple’s biggest missteps.
+										</li>
+									</ul></p>
+									
 									<h3><em>21.9.2025 &nbsp;</em>macOS Tahoe</h3>
 									<p>I had been looking forward to the release of macOS Tahoe, hoping it would bring back some of the visual Apple magic from the Steve Jobs era. Unfortunately, my expectations were not met — in fact, quite the opposite: Tahoe’s design feels cluttered, its usability has regressed, and the system is plagued by bugs. To me, it comes across as an epic product failure.</p>
 									<p>Because of this, I have decided to revert to Sequoia and stick with it for as long as possible. For the vAmiga project, this means that support for Tahoe will be limited, and possibly non-existent, at least from my side. For the time being, Sequoia remains the officially supported OS for vAmiga.</p>
-									<p>Thanks for your understanding.</p>
+									<p>Thanks for your understanding.
+									</p>
+									
+									<h3><em>9.9.2025</em> &nbsp; 🎉 Announcing RetroVisor v1.0b1</h3>
+									<p>As of September 9, 2025, the first public beta of <strong>Version 1.0</strong> is officially available!</p>
+									<p>Version 1.0 beta 1 is a huge update and a major leap forward from the last version. Until now, RetroVisor relied on the simple CRT Easy shader. With this release, the brand-new Sankara shader takes center stage as the new default, bringing a whole new level of authenticity to retro visuals.
+									</p><p>The Sankara shader emulates a wide range of composite and CRT effects, including chroma smear, various scanline and dot mask options, as well as blooming effects for that classic glow.
+									</p><p>In addition, Beta 1 also adds the ability to view the effect texture side-by-side with the original texture in a split view, making shader tuning and analysis more intuitive than ever. On top of that, zooming and panning have been improved, offering smoother navigation and a more flexible experience.</p>
+									
 									<h3><em>23.2.2025 &nbsp;</em>vAmiga 4.0 released</h3>
 									<p>The latest vAmiga update introduces LZ4 snapshot compression, making snapshot saving faster and more efficient. Gamepad detection has also been improved, ensuring better support for controllers.
 										Several bugs have been fixed in this release. ExtendedADF support, which was previously broken, is now working correctly. An issue with folder import has been resolved, and vAmiga no longer attempts to boot from unbootable hard drives.
-										Enjoy the update, and happy emulating!<p>
-										</article>
-
-									</div>
-								</div>
-								<div class="col-4 col-12-narrower">
-									<div id="sidebar2">
-
-										<!-- Sidebar -->
-										<section>
-											<h2>Project activities</h2>
-											<h3>vAmiga</h3>
-											<p>
-												<img alt="Multi-platform build"
-												src="https://github.com/dirkwhoffmann/vAmiga/workflows/CMake%20on%20multiple platforms/badge.svg"><br>
-												<img alt="MinGW build"
-												src="https://github.com/dirkwhoffmann/vAmiga/workflows/CMake%20with%20MinGW/badge.svg"><br>
-												<img alt="GitHub code size in bytes"
-												src="https://img.shields.io/github/languages/code-size/dirkwhoffmann/vAmiga">
-												<img alt="GitHub repo size"
-												src="https://img.shields.io/github/repo-size/dirkwhoffmann/vAmiga">
-											</p>
-										</section>							
-									</div>
-								</div>
+										Enjoy the update, and happy emulating!
+									</p>
+									
+									<h3><em>24.6.2024 &nbsp;</em>VirtualC64 5.0 Beta 6 released</h3>
+									<p>Today, the sixth beta of version 5.0 has been released. As expected, the numerous changes in the new core have introduced minor and major bugs, but most of these should have been fixed by now. In the meantime, we have also managed to compile the new core under WebAssembly, allowing the web-port maintainers to update the v5 core shortly.</p>
+									
+									<h3><em>8.6.2024 &nbsp;</em>VirtualC64 5.0 on the home straight</h3>
+									<p>Today, the second beta of VirtualC64 5.0 has been released. This update was initially planned as version 4.8, with run-ahead support as its most prominent new feature. In run-ahead mode, two emulator instances operate side-by-side: a primary instance emulating the C64 as usual and a run-ahead instance running several frames ahead. The run-ahead instance generates the image texture, requiring both instances to run in sync with a time delay. Whenever the primary instance's execution state changes, such as by a joystick event, the emulator must update the run-ahead instance accordingly. For seamless synchronization, it is crucial to recognize every externally initiated state change in the primary instance.</p>
+									<p>This necessity prompted a fundamental revision of the emulator's external API. The extensive changes to the emulator's architecture warranted skipping the version 4.8 designation and releasing it as version 5.0 instead. From a developer's perspective, the effort has been worthwhile. The internal code architecture has significantly improved, becoming more streamlined than ever. However, these numerous changes have introduced some bugs, as expected in such a substantial update.</p>
+									<p>The current version is in the beta phase, and I highly value your participation in testing. Your feedback is crucial for fine-tuning the software. Once the beta version achieves the stability level of the current version 4.7, version 5.0 will be officially released.</p>
+									
+									<h3><em>24.8.2023 &nbsp;</em>DeepDrill 3.3 released</h3>
+									<p>DeepDrill 3.2 now supports the distance estimation technique, which is the preferred method to produce crisp black and white images of the Mandelbrot set.
+									</p>
+									
+									<h3><em>8.7.2023 &nbsp;</em>DeepDrill 3.1 released</h3>
+									<p>DeepDrill 3.1 offers a revised graphics engine that is more flexible than its predecessor. For example, various parameters such as the zoom speed or the texture opacity can be varied throughout the video by assigning the parameter a spline curve instead of a fixed value. In addition, the zoom direction can be reversed now.
+									</p>
+									
+									<h3><em>27.6.2023 &nbsp;</em>Moira v2.4 has been released</h3>
+									<p>This release contains the core CPU code of vAmiga 2.4. It also includes some minor disassembler fixed that were spotted after vAmiga 2.4 was released. 
+									</p>
+									<h3><em>25.6.2023 &nbsp;</em>DeepDrill 3.0 released</h3>
+									<p>The new version offers improvements in three main areas. First, several speed improvements have been implemented. I.e., an area checker, a period checker, and an attractor checker have been added, which can classify certain pixels as belonging to the Mandelbrot set before the maximum iteration number is reached. Secondly, new graphic effects can be applied. With the new version, it is possible to overlay color values derived from the color palette with pixels from an overlay texture. The demo video below shows the effect in action. Third, the input and output formats have been revised. Location files, profiles and project files have been replaced by configuration files with the .ini extension.
+									</p>
+									
+									<h3><em>14.6.2023 &nbsp;</em>DeepDrill 2.0 released</h3>
+									<p>DeepDrill 2.0 is a major update. The new version offers a reworked tool chain, improved GPU filters, and the capability of creating spatial images.</p>
+									
+									<h3><em>27.5.2023 &nbsp;</em>DeepDrill 1.2 released</h3>
+									<p>DeepDrill 1.2 offers improved shader support. The new version achieves much smoother scrolling by utilizing tricubic texel interpolation.</p>
+									
+									<h3><em>2.5.2023 &nbsp;</em>DeepDrill 1.1 released</h3>
+									<p>DeepDrill 1.1 offers simplified palette management and a cleaned up code base.</p>
+									
+									<h3><em>25.4.2023 &nbsp;</em>DeepDrill 1.0 released</h3>
+									<p>DeepDrill 1.0 supports both the creation of still images and zoom videos.</p>
+									
+									<h3><em>27.11.2022 &nbsp;</em>Saying Hello to Peddle</h3>
+									<p>What is Peddle? The main goal of this project is to make the CPU of VirtualC64
+										available for
+										third-party applications. Until now, two major obstacles had to be overcome. First,
+										the CPU
+										core was deeply embedded in VirtualC64 and closely connected to many other
+										components of the
+										emulator. Therefore, it required some decent effort and knowledge to extract the
+										code. Second,
+										VirtualC64 is released under the terms of the GPL which means that the CPU core
+										could not be
+										used legally in many other applications. Both problems were addressed by this
+										project.
+										First, the core was isolated and freed from all direct dependencies. It now
+										communicates with
+										the surrounding logic via a clearly defined interface. Second, the core has been
+										re-licensed.
+										It is now published under the terms of the MIT license, allowing much broader use.
+									</p>
+									
+									<h3><em>18.11.2022 &nbsp;</em>Moira v2.2b1 has been released</h3>
+									<p>Today Moira v2.2b1 has been released. The new version is a big improvement over
+										previous versions. In addition to the existing 68000 emulation, Moira is able 
+										to accurately emulate a Motorola 68010 now. Furthermore, experimental support for 
+										the Motorola 68020 has been added. Documentation has been reworked, too. The old 
+										wiki pages have been removed and their contents integrated into a more detailed 
+										documentation system generated with Sphinx. All pages have been updated to cover 
+										the latest version.
+										The release carries version number v2.2b because it is the one used in vAmiga 2.2b1.
+										Once vAmiga leaves the beta phase, the version number will be bumped up to 2.2.
+									</p>
+									
+								</article>
 							</div>
 						</div>
-					</section>
-
-					<div id="footer">
-
-						<ul class="icons">
-							<li>
-								<a href="http://www.dirkwhoffmann.de" class="icon solid fa-graduation-cap"><span class="label">Homepage</span></a>
-							</li>
-							<li>
-								<a href="https://www.amazon.de/Dirk-W-Hoffmann/e/B004580IPU" class="icon brands fa-amazon"><span class="label">Amazon</span></a>
-							</li>
-							<li>
-								<a href="https://github.com/dirkwhoffmann" class="icon brands fa-github"><span class="label">GitHub</span></a>
-							</li>
-							<li>
-								<a href="https://www.youtube.com/channel/UCk9tUTMPMSQdxhKeeJRpNAA" class="icon brands fa-youtube"><span class="label">Youtube</span></a>
-							</li>	
-							<li>
-								<a href="https://de.wikipedia.org/wiki/Dirk_Hoffmann" class="icon brands fa-wikipedia-w"><span class="label">Wikipedia</span></a>
-							</li>
-						</ul>
-
-						<div class="copyright">
-							<ul class="menu">
-								<li>&copy; <a href="http://www.dirkwhoffmann.de">Dirk W. Hoffmann</a></li>
-								<li><a href="impressum.html">Impressum</a></li>
-								<li><a href="impressum.html">Datenschutz</a></li>
-								<li><a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
+						<div class="col-4 col-12-narrower">
+							<div id="sidebar2">
+								
+								<!-- Sidebar -->
+								<section>
+									<h2>Project Status</h2>
+									
+									<h3 style="display: flex; align-items: center; gap: 10px;">
+										<img alt="Logo" width="32px" src="images/icon-va.png"> 
+										<span>vAmiga</span>
+									</h3>
+									<p>
+										<img alt="Multi-platform build"
+										src="https://github.com/dirkwhoffmann/vAmiga/actions/workflows/cmake-multi-platform.yml/badge.svg"><br>
+										<img alt="MinGW build"
+										src="https://github.com/dirkwhoffmann/vAmiga/actions/workflows/cmake-mingw.yml/badge.svg"><br>
+										<img alt="GitHub code size in bytes"
+										src="https://img.shields.io/github/languages/code-size/dirkwhoffmann/vAmiga">
+										<img alt="GitHub repo size"
+										src="https://img.shields.io/github/repo-size/dirkwhoffmann/vAmiga">
+									</p>
+									
+									<h3 style="display: flex; align-items: center; gap: 10px;">
+										<img alt="Logo" width="32px" src="images/icon-vc.png"> 
+										<span>VirtualC64</span>
+									</h3>
+									<p>
+										<img alt="Multi-platform build"
+										src="https://github.com/dirkwhoffmann/virtualc64/actions/workflows/cmake-multi-platform.yml/badge.svg"><br>
+										<img alt="MinGW build"
+										src="https://github.com/dirkwhoffmann/virtualc64/actions/workflows/cmake-mingw.yml/badge.svg"><br>
+										<img alt="GitHub code size in bytes"
+										src="https://img.shields.io/github/languages/code-size/dirkwhoffmann/virtualc64">
+										<img alt="GitHub repo size"
+										src="https://img.shields.io/github/repo-size/dirkwhoffmann/virtualc64">
+									</p>
+									
+									<h3 style="display: flex; align-items: center; gap: 10px;">
+										<img alt="Logo" width="32px" src="images/icon-mo.png"> 
+										<span>Moira</span>
+									</h3>
+									<p>
+										<img alt="Multi-platform build"
+										src="https://github.com/dirkwhoffmann/Moira/actions/workflows/cmake-multi-platform.yml/badge.svg"><br>
+										<img alt="Multi-platform build"
+										src="https://github.com/dirkwhoffmann/Moira/actions/workflows/cmake-mingw.yml/badge.svg"><br>
+										<img alt="GitHub code size in bytes"
+										src="https://img.shields.io/github/languages/code-size/dirkwhoffmann/Moira">
+										<img alt="GitHub repo size"
+										src="https://img.shields.io/github/repo-size/dirkwhoffmann/Moira">
+									</p>
+									
+									<h3 style="display: flex; align-items: center; gap: 10px;">
+										<img alt="Logo" width="32px" src="images/icon-pe.png"> 
+										<span>Peddle</span>
+									</h3>									
+									<p>
+										<img alt="Multi-platform build"
+										src="https://github.com/dirkwhoffmann/Peddle/actions/workflows/cmake-multi-platform.yml/badge.svg"><br>
+										<img alt="GitHub code size in bytes"
+										src="https://img.shields.io/github/languages/code-size/dirkwhoffmann/Peddle">
+										<img alt="GitHub repo size"
+										src="https://img.shields.io/github/repo-size/dirkwhoffmann/Peddle">
+										<h3></h3>
+									</p>
+								</section>							
+							</div>
 						</div>
 					</div>
 				</div>
-
-				<!-- Scripts -->
-				<script src="assets/js/jquery.min.js"></script>
-				<script src="assets/js/jquery.dropotron.min.js"></script>
-				<script src="assets/js/browser.min.js"></script>
-				<script src="assets/js/breakpoints.min.js"></script>
-				<script src="assets/js/util.js"></script>
-				<script src="assets/js/main.js"></script>
-			</body>
-
-			</html>
+			</section>
+			
+			<div id="footer">
+				
+				<ul class="icons">
+					<li>
+						<a href="http://www.dirkwhoffmann.de" class="icon solid fa-graduation-cap"><span class="label">Homepage</span></a>
+					</li>
+					<li>
+						<a href="https://www.amazon.de/Dirk-W-Hoffmann/e/B004580IPU" class="icon brands fa-amazon"><span class="label">Amazon</span></a>
+					</li>
+					<li>
+						<a href="https://github.com/dirkwhoffmann" class="icon brands fa-github"><span class="label">GitHub</span></a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/channel/UCk9tUTMPMSQdxhKeeJRpNAA" class="icon brands fa-youtube"><span class="label">Youtube</span></a>
+					</li>	
+					<li>
+						<a href="https://de.wikipedia.org/wiki/Dirk_Hoffmann" class="icon brands fa-wikipedia-w"><span class="label">Wikipedia</span></a>
+					</li>
+				</ul>
+				
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy; <a href="http://www.dirkwhoffmann.de">Dirk W. Hoffmann</a></li>
+						<li><a href="impressum.html">Impressum</a></li>
+						<li><a href="impressum.html">Datenschutz</a></li>
+						<li><a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+	
+	</html>
+	

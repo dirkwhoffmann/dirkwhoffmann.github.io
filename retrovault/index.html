@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <!--
-	Arcana by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Arcana by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 
@@ -12,125 +12,144 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
-	
+
 
 <body class="is-preload">
 	<div id="page-wrapper">
-
+		
 		<!-- Header -->
 		<div id="header">
-
+			
 			<!-- Logo -->
-			<h1><a href="index.html" id="logo">RetroVault<em> for macOS</em></a></h1>
-
+			<h1><a href="index.html" id="logo">Dirk W. Hoffmann<em> { RetroVault }</em></a></h1>
+			
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
 					<li><a href="../index.html">Home</a></li>
-					<li><a href="https://github.com/dirkwhoffmann/retrovault">Code</a></li>
-					<li><a href="https://github.com/dirkwhoffmann/retrovault/issues">Issues</a></li>
+					<li><a href="../news.html">News</a></li>
+					<li class="current"><a href="#">Products</a>
+						<ul>
+							<li><a href="../vAmiga/index.html">vAmiga</a></li>
+							<li><a href="../VirtualC64/index.html">VirtualC64</a></li>
+							<li><a href="../Moira/index.html">Moira</a></li>
+							<li><a href="../Peddle/index.html">Peddle</a></li>
+							<li><a href="../RetroVisor/index.html">RetroVisor</a></li>
+							<li class="current"><a href="../RetroVault/index.html">RetroVault</a></li>
+							<li><a href="../DeepDrill/index.html">DeepDrill</a></li>
+							<li><a href="https://vamiganet.github.io/">vAmiga.net</a></li>
+							<li><a href="https://vamigados.github.io/">vAmiga.dos</a></li>
+						</ul>	
+					</li>
 					<li><a href="../impressum.html">Impressum</a></li>
 				</ul>
 			</nav>
 		</div>
-
+		
 		<!-- Banner -->
-		<section id="banner">
+		<section id="banner" style="--banner-img: url('../../images/banner.jpg');">
 			<header>
-				<h2><em>Download the latest version from</em></h2>
-				<a href="https://github.com/dirkwhoffmann/retrovault/releases"
-				class="button">GitHub</a>
+				<h2><em>RetroVault is distributed via the releases page on</em></h2>
+				<a href="https://github.com/dirkwhoffmann/retrovault/releases/" class="button">GitHub</a>
 			</header>
 		</section>
-
+		
 		<!-- Main -->
 		<section class="wrapper style1">
 			<div class="container">
 				<div class="row gtr-200">
 					<div class="col-6 col-12-narrower imp-narrower">
 						<div id="content">
-
+							
 							<!-- Content -->
-
 							<article>
 								<h2>About</h2>
-
+								
 								<p>RetroVault is an application designed for accessing and maintaining legacy disk image formats, allowing users to mount, inspect, and repair classic floppy disk images within a modern computing environment. Originally developed as a native macOS application, RetroVault has since been completely rewritten using Qt and no longer depends on macOS-specific frameworks. This architectural shift makes the application largely platform-independent; in principle, porting it to Linux should be straightforward, although this has not yet been completed due to time constraints.
 								</p>
 								
 								<p>RetroVault focuses on providing reliable tools for working with historical disk image formats. At present, it supports Amiga ADF (Amiga Disk File) images as well as D64 disk images used by the Commodore 64, thereby covering two of the most widely used formats in retro computing.</p>
-
+								
 								<p>One of the core capabilities of RetroVault is the ability to mount disk images as file systems. On macOS, this is achieved through integration with macFUSE, which allows mounted images to appear like native volumes and be accessed seamlessly through Finder or standard command-line tools. Even in environments where macFUSE is not available, the remaining functionality of the application can still be used without restriction.</p>
 								
 								<p>Beyond mounting, RetroVault includes a built-in block viewer that enables detailed, low-level inspection of disk images. This feature allows users to examine raw block data, modify individual bytes, and write changes directly back to the image file, providing the level of control required for advanced analysis and debugging of file system structures.</p>
-
+								
 								<p>In addition, RetroVault offers functionality for analyzing and repairing disk images by inspecting internal file system structures such as block chains, allocation maps, and overall structural consistency. This makes it possible to detect inconsistencies and recover data from damaged or partially corrupted images, which is particularly valuable when working with aging or historically significant media.</p>
-
+								
 								<p>RetroVault is currently in beta-testing phase. Feedback and bug reports are welcome via the GitHub project page. Before mounting disk images, it is strongly recommended to create backups, as data corruption may still occur during testing.</p>
-
+								
 								<p>RetroVault is open source software and released under the Mozilla Public License v2.</p>						
 							</article>
-
 						</div>
 					</div>
 					<div class="col-6 col-12-narrower imp-narrower">
-						<div id="content">
-
+						<div id="sidebar">
+							
 							<!-- Sidebar -->
-							<article>
-								<header>
-									<h2>Impressions</h2>
-								</header>
+							<section>
+								<h2>Resources</h2>
+								<center>
+								<a href="https://github.com/dirkwhoffmann/RetroVault"
+								class="button" style="display: inline-block; width: 75%; text-align: left; margin-bottom: 0.75em;"><i class="icon brands fa-github" style="margin-right: 0.25em;"></i> Code</a>
+								<a href="https://github.com/dirkwhoffmann/RetroVault/issues"
+								class="button" style="display: inline-block; width: 75%; text-align: left; margin-bottom: 0.75em;"><i class="icon brands fa-github" style="margin-right: 0.25em;"></i> Issues</a>
+								<!--<a href="https://github.com/dirkwhoffmann/RetroVault/discussions"
+								class="button" style="display: inline-block; width: 75%; text-align: left; margin-bottom: 0.75em;"><i class="icon brands fa-github" style="margin-right: 0.25em;"></i> Discussions</a>-->
+								</center>
+							</section>
+							<br>
 
+							<section>
+								<h2>Impressions</h2>								
 								<span class="image featured"><img src="images/screenshot1.png" alt="" /></span>
 								<span class="image featured"><img src="images/screenshot2.png" alt="" /></span>
+							</section>
 						</div>
 					</div>
 				</div>
+			</section>
+			
+			<!-- Footer -->
+			<div id="footer">
+				
+				<!-- Icons -->
+				<ul class="icons">
+					<li>
+						<a href="https://www.dirkwhoffmann.de" class="icon solid fa-graduation-cap"><span class="label">Homepage</span></a>
+					</li>
+					<li>
+						<a href="https://www.amazon.de/Dirk-W-Hoffmann/e/B004580IPU" class="icon brands fa-amazon"><span class="label">Amazon</span></a>
+					</li>
+					<li>
+						<a href="https://github.com/dirkwhoffmann" class="icon brands fa-github"><span class="label">GitHub</span></a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/channel/UCk9tUTMPMSQdxhKeeJRpNAA" class="icon brands fa-youtube"><span class="label">Youtube</span></a>
+					</li>	
+					<li>
+						<a href="https://de.wikipedia.org/wiki/Dirk_Hoffmann" class="icon brands fa-wikipedia-w"><span class="label">Wikipedia</span></a>
+					</li>
+				</ul>
+				
+				<!-- Copyright -->
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy; <a href="http://www.dirkwhoffmann.de">Dirk W. Hoffmann</a></li>
+						<li><a href="../impressum.html">Impressum</a></li>
+						<li><a href="../impressum.html">Datenschutz</a></li>
+						<li><a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
 			</div>
-		</section>
-
-<!-- Footer -->
-<div id="footer">
-	
-	<!-- Icons -->
-	<ul class="icons">
-		<li>
-			<a href="https://www.dirkwhoffmann.de" class="icon solid fa-graduation-cap"><span class="label">Homepage</span></a>
-		</li>
-		<li>
-			<a href="https://www.amazon.de/Dirk-W-Hoffmann/e/B004580IPU" class="icon brands fa-amazon"><span class="label">Amazon</span></a>
-		</li>
-		<li>
-			<a href="https://github.com/dirkwhoffmann" class="icon brands fa-github"><span class="label">GitHub</span></a>
-		</li>
-		<li>
-			<a href="https://www.youtube.com/channel/UCk9tUTMPMSQdxhKeeJRpNAA" class="icon brands fa-youtube"><span class="label">Youtube</span></a>
-		</li>	
-		<li>
-			<a href="https://de.wikipedia.org/wiki/Dirk_Hoffmann" class="icon brands fa-wikipedia-w"><span class="label">Wikipedia</span></a>
-		</li>
-	</ul>
-	
-	<!-- Copyright -->
-	<div class="copyright">
-		<ul class="menu">
-			<li>&copy; <a href="http://www.dirkwhoffmann.de">Dirk W. Hoffmann</a></li>
-			<li><a href="../impressum.html">Impressum</a></li>
-			<li><a href="../impressum.html">Datenschutz</a></li>
-			<li><a href="http://html5up.net">HTML5 UP</a></li>
-		</ul>
-	</div>
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+			
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+		</body>
+		
+		</html>
