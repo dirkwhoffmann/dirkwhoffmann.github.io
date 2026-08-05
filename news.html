@@ -58,6 +58,33 @@
 										<h2>News</h2>
 									</header>
 									
+									<h3><em>5.8.2026 &nbsp;</em>Development Update</h3>
+									<img src="https://github.com/user-attachments/assets/a1a37037-6935-41e0-859a-5a89628be691" style="float:left; width:100%; margin: 0em 0em 1em 0em;">
+									<p>Development of my new Qt-based emulator suite, <strong>Silicium</strong>, is progressing well. Although there is still a considerable amount of work ahead, the project has reached a stage where its overall architecture is largely in place. A preview release is still some time away, but I would like to share an overview of the current design.</p>
+
+									<ul>
+										<li>
+											<strong>Three Applications.</strong><br>
+											Silicium is organized as three separate applications, two of which normally run in the background. The main application serves as a virtual machine library that manages both Commodore 64 and Amiga virtual machines.
+										</li>
+										<li>
+											<strong>Decoupled Emulation.</strong><br>
+										 	Starting a virtual machine launches a dedicated emulator process for the selected platform. Communication between the library application and the emulator is based on the RPC architecture already used internally by VirtualC64 and vAmiga, providing a clean separation between the user interface and the emulation core.
+										</li>
+										<li>
+											<strong>Cross-Platform Foundation.</strong><br>
+											All Cocoa-specific code is being removed in favor of a platform-independent architecture. The user interface is implemented with Qt, while SDL3 provides game controller support. Although macOS remains the primary development platform for the time being, the codebase is designed to compile on Linux and Windows with minimal platform-specific adjustments.
+										</li>
+										<li>
+											<strong>Unified Virtual Machine Format.</strong><br>
+											The standalone macOS versions of VirtualC64 and vAmiga will eventually adopt the Silicium virtual machine format as their primary document format, replacing workspaces. This will allow virtual machines to be exchanged seamlessly between the standalone emulators and the Silicium environment.
+										</li>
+										<li>
+											<strong>Phased Rollout.</strong><br>
+											Development begins with the Commodore 64 backend, whose smaller codebase allows for much shorter build times. The first preview release will therefore support C64 virtual machines only. Support for the vAmiga core will be added after the initial alpha testing phase.
+										</li>
+									</ul>
+
 									<h3><em>25.4.2026 &nbsp;</em>Time for Change</h3>
 									<img src="images/time-for-change.jpg" style="float:left; width:50%; margin: 0.5em 1em 0em 0em;">
 									<p>Due to my growing disappointment with the direction Apple has taken with macOS in recent years, I have finally decided to stop developing native macOS applications. With RetroVault, I have already implemented my first app based on Qt. My positive experience with the framework has convinced me that moving away from macOS-specific development is the right choice. In the future, I will focus on cross-platform applications, with Linux as my eventual target platform.</p>
