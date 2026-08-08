@@ -58,7 +58,22 @@
 										<h2>News</h2>
 									</header>
 									
-									<h3><em>5.8.2026 &nbsp;</em>Development Update</h3>
+									<h3><em>8.8.2026 &nbsp;</em>AGA is coming to vAmiga</h3>
+									<p>In recent years, I’ve often been asked whether vAmiga will gain AGA support someday. My answer has always been no, because its architecture was designed closely around the OCS/ECS architecture, which made me believe that adding AGA support would require major changes throughout the codebase. Since I never owned an AGA Amiga myself, my motivation to make such a deep cut into the architecture was low.</p>
+
+									<p>However, the AI-driven AGA implementation in Mithrendal’s web port of vAmiga has now proved that decent AGA compatibility can be added without having to change every aspect of the emulator’s architecture. Over the years, I’ve invested a lot of time in keeping vAmiga’s software architecture clean and well organized. This seems to have finally paid off as the AI was able to keep most of the changes local. Seeing that my refactoring efforts over the years have made such a significant extension possible without disrupting the existing architecture makes me very happy.</p>
+
+									<p>Encouraged by the initial success achieved with vAmigaWeb, I’ve decided to bring AGA support back to vAmiga. However, I won’t merge any AI-generated code directly. I want to remain in full control of the emulator and understand every change that goes into the codebase. My plan for the next week is therefore to thoroughly review what the AI has generated, step by step, and implement the changes manually in my own style. This way, vAmiga should remain just as maintainable in the future as it is today.</p>
+
+									<p>I hope this is good news for everyone who has asked for AGA support in the past. However, since I’ll need to dig deeply into the AGA hardware architecture while implementing and validating the changes, I don’t want to make any promises about when an AGA-enabled version of vAmiga will arrive.</p>
+
+									<p>In addition to developing the new core, I’m also currently writing new test cases for vAmigaTS to verify that the emulation matches the behavior of a real machine. A few years ago, I bought an A1200 on eBay, which I can now use to generate the test images. Since I never really planned to develop AGA support in the first place, the machine had been gathering dust on my shelf until now.</p>
+
+									<h3><em>7.8.2026 &nbsp;</em>vAmiga 4.5 released</h3>
+									<p>vAmiga 4.5 is now available. The new version brings several improvements to the emulator core, including support for floppy disk images stored directly in memory buffers and proper gamma correction in the palette builders. The palette lookup mechanism has also been redesigned, replacing the previous 4096-entry table with a much smaller table based on an affine transformation. Besides reducing the memory footprint, this change lays the groundwork for upcoming AGA support.</p>
+									<p>The release also fixes several bugs, including issues with preference loading, the <it>Export to…</it> menu, and the server launch daemon, which could previously be triggered on every cycle. Additional safeguards have been added for potential Swift <code>nil</code> values, and a problematic pull request has been reverted.</p>
+
+									<h3><em>5.8.2026 &nbsp;</em>VirtualC64 and vAmiga are becoming Silicium</h3>
 									<img src="https://github.com/user-attachments/assets/a1a37037-6935-41e0-859a-5a89628be691" style="float:left; width:100%; margin: 0em 0em 1em 0em;">
 									<p>Development of my new Qt-based emulator suite, <strong>Silicium</strong>, is progressing well. Although there is still a considerable amount of work ahead, the project has reached a stage where its overall architecture is largely in place. A preview release is still some time away, but I would like to share an overview of the current design.</p>
 
