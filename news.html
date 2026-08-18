@@ -57,6 +57,24 @@
 									<header>
 										<h2>News</h2>
 									</header>
+
+									<h3><em>18.8.2026 &nbsp;</em>vAmiga 5.0 Beta 1 released</h3>
+									<p>This release brings AGA support to vAmiga. Please keep the following limitations in mind:</p>
+
+    								<ul>
+        								<li>
+						            		<strong>Productivity Modes:</strong>
+            								vAmiga's AGA implementation does not support productivity modes (special video modes configured via BEAMCON0). This limitation was already present in the existing ECS implementation.
+        								</li>
+								        <li>
+								            <strong>CPU Timing &amp; Instruction Cache:</strong>
+								            AGA is typically used alongside the 68EC020 CPU to emulate an Amiga 1200. The current CPU implementation does not yet emulate 68EC020 timing accurately. For example, no instruction cache is emulated; all instructions are timed based on their average cycle counts. Although this approach works well in most scenarios, it causes incompatibilities with some specific AGA titles that rely on precise 68EC020 timing behavior.
+        								</li>
+								    </ul>
+
+								    <p><strong>💡 Tip:</strong> If you run into an incompatibility, comparing behavior with vAmigaWeb can be helpful, as it contains experimental code for emulating the 68EC020 instruction cache.</p>
+
+								    <p>Any testing and feedback is greatly appreciated!</p>
 									
 									<h3><em>8.8.2026 &nbsp;</em>AGA is coming to vAmiga</h3>
 									<p>In recent years, I’ve often been asked whether vAmiga will gain AGA support someday. My answer has always been no, because its architecture was designed closely around the OCS/ECS architecture, which made me believe that adding AGA support would require major changes throughout the codebase. Since I never owned an AGA Amiga myself, my motivation to make such a deep cut into the architecture was low.</p>
